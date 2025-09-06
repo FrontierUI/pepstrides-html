@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'Organetto-Bold';
+  src: url('/assets/fonts/organetto-bold.ttf') format(truetype);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* most used Classes */
+
+.heading {
+  font-family: 'Organetto-Bold';
+}
+
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centBet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.justStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.justCenter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btnWhiteShadow {
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.4);
+}
+
+.btnShadow {
+  box-shadow: 0px 0px 12px 0px rgba(239, 98, 35, 0.4);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(239, 98, 35, 0.4);
+}
+
+.btnOrngShadow {
+  box-shadow: 0px 0px 24px 0px rgba(239, 98, 35, 0.8);
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(239, 98, 35, 0.8);
+}
+
+/* faq sect start */
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #fff;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #fff;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #fff;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #ef6223;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #fff;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* faq sect end */
